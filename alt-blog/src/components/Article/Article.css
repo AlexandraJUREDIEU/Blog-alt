@@ -1,0 +1,18 @@
+form{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    gap:2em; 
+}
+
+form>div{
+    display:flex;
+    flex-direction: column;  
+    
+}
+
+form>label{
+    text-align: start;
+
+}
