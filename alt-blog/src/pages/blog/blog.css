@@ -1,0 +1,31 @@
+.blog{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    min-height:70vh;
+    padding:1em;
+    gap:1em;
+}
+.list-article{
+    display:flex;
+    flex-direction:row;
+    background-color: #383838;
+    width:80%;
+    margin:0 auto;
+    gap:5em;
+    border-radius: 100px 50px 50px 100px
+    
+}
+.list-article>img{
+    border-radius: 50%;
+}
+
+.article-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.article-content>p{
+    font-weight: 300;
+    
+}

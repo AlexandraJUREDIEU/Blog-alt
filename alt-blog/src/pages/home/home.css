@@ -1,0 +1,31 @@
+.contact, .last-article{
+    display:flex;
+    flex-direction: row;
+    max-height: 50%;
+    gap:1em;
+    margin-bottom:1em;
+    
+}
+
+.contact>article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #383838;
+    width:70%;
+    padding: 0.75em;
+    max-height: 40vh;
+}
+
+
+.contact>form{
+    background-color: #383838;
+    width:30%;
+    max-height: 40vh;
+    padding: 0.75em;
+}
+
+.last-article{
+    background-color: #383838;
+    padding: 0.75em;
+}

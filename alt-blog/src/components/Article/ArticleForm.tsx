@@ -2,6 +2,7 @@
 import { ChangeEvent, FormEvent, useState } from 'react';
 import './Article.css';
 import { Article } from '../../services/Interface/Article';
+import { useNavigate } from 'react-router-dom';
 
 
 interface ArticleFormProp {
@@ -9,18 +10,26 @@ interface ArticleFormProp {
   }
 
 export default function ArticleForm({handleSubmitArticle}:ArticleFormProp) {
-
+    
+    const navigate = useNavigate();
     const[form,setForm] = useState<Article>({
         author: '',
         title: '',
         description: '',
+        date: new Date() ,
     })
 
 
     function handleSubmit(e: FormEvent<HTMLFormElement>): void {
         e.preventDefault();
-        console.log(form);
-        handleSubmitArticle(form);
+
+        const currentDate = new Date(); // Obtenir la date et l'heure actuelles
+        const updatedForm = { ...form, date: currentDate }; // Ajouter la date et l'heure à l'objet form
+        console.log(updatedForm);
+        handleSubmitArticle(updatedForm);
+        navigate('/blog');
+        // console.log(form);
+        // handleSubmitArticle(form);
         
 
     }

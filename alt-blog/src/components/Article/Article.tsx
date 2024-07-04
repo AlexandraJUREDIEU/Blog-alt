@@ -10,10 +10,10 @@ export default function Article ({title, description}:ArticleProps ) {
 
     return (
       <>
-        <img src="https://placehold.co/200" alt="" />
+        <img src="https://placehold.co/200x200" alt="" />
 
         <div className="article-content">
-          <h4>{title}</h4>
+          <h3>{title}</h3>
           <p>{description}</p>
         </div>  
       </>
